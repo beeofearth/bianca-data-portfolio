@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <title>Bianca Esterhuizen - Data Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", sans-serif;
+      font-family: 'Inter', sans-serif;
       background-color: #f0fdf4;
       color: #222;
     }
@@ -16,45 +18,68 @@
     header {
       background-color: #2f855a;
       color: white;
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     }
 
     .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
+      max-width: 880px;
+      margin: 60px auto;
+      padding: 30px;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.08);
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.06);
       border: 2px solid #c6f6d5;
     }
 
-    h1, h2 {
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h2 {
       color: #2f855a;
+      margin-top: 40px;
     }
 
     ul {
-      list-style-type: square;
-      padding-left: 20px;
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin: 8px 0;
     }
 
     a {
       color: #2f855a;
-      font-weight: bold;
+      font-weight: 600;
       text-decoration: none;
+      transition: all 0.2s ease-in-out;
     }
 
     a:hover {
       text-decoration: underline;
+      color: #276749;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       font-size: 0.9em;
       color: #666;
-      margin-top: 40px;
+      margin-top: 60px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .emoji {
+      font-size: 1.5em;
     }
   </style>
 </head>
@@ -66,21 +91,22 @@
   </header>
 
   <div class="container">
-    <h2>📂 Projects</h2>
+    <div class="section-title"><span class="emoji">📂</span><h2>Projects</h2></div>
     <ul>
       <li><a href="#sql">SQL Project: Sales Analysis</a></li>
       <li><a href="#powerbi">Power BI Dashboard: Customer Insights</a></li>
       <li><a href="#python">Python Script: Data Cleaning</a></li>
     </ul>
 
-    <h2>📜 Certifications</h2>
+    <div class="section-title"><span class="emoji">📜</span><h2>Certifications</h2></div>
     <p>Coming soon: Microsoft Certified: Power BI Data Analyst Associate</p>
   </div>
 
   <footer>
-    <p>© 2025 Bianca Esterhuizen • Powered by GitHub Pages • Green and growing 🌿</p>
+    <p>© 2025 Bianca Esterhuizen • Powered by GitHub Pages</p>
   </footer>
 
 </body>
 </html>
+
 
